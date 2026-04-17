@@ -3,8 +3,11 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 export const metadata = {
-  title: 'Bathe Engineering Works',
-  description: 'Precision Engineering & Manufacturing Solutions in Pune',
+  title: "Bathe Engineering Works",
+  description: "Precision Engineering & Manufacturing Solutions in Pune",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
