@@ -6,7 +6,7 @@ export const metadata = {
   title: "Bathe Engineering Works",
   description: "Precision Engineering & Manufacturing Solutions in Pune",
   icons: {
-    icon: "/logo.png",
+    icon: "/logo_final.png",
   },
 };
 

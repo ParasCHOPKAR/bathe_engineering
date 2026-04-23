@@ -66,7 +66,7 @@ export default function Infrastructure() {
   ];
 
   return (
-    <div className="bg-slate-50 min-h-screen py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div className="bg-[#F5F5DC] min-h-screen py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
         {/* HEADER SECTION */}
@@ -74,11 +74,11 @@ export default function Infrastructure() {
           initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-blue-950 mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-black text-[#6A0D25] mb-6 tracking-tight uppercase">
             State-of-the-Art Infrastructure
           </h2>
-          <div className="w-24 h-1.5 bg-cyan-500 mx-auto rounded-full mb-6"></div>
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto font-medium leading-relaxed">
+          <div className="w-24 h-1.5 bg-[#F97316] mx-auto rounded-full mb-6"></div>
+          <p className="text-lg text-[#14532D]/90 max-w-3xl mx-auto font-medium leading-relaxed">
             Our 2000 sq. ft. manufacturing facility is equipped with a comprehensive range of advanced CNC and conventional machinery to fulfill high-precision engineering requirements.
           </p>
         </motion.div>
@@ -86,25 +86,25 @@ export default function Infrastructure() {
         {/* SHOP FLOOR DETAILS - Highlight Box */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5 }}
-          className="bg-gradient-to-br from-blue-950 to-blue-800 rounded-3xl p-8 mb-16 shadow-2xl border-b-4 border-cyan-500 text-white relative overflow-hidden"
+          className="bg-gradient-to-br from-[#6A0D25] to-[#4a081a] rounded-3xl p-8 mb-16 shadow-2xl border-b-[4px] border-[#D4AF37] text-white relative overflow-hidden"
         >
           {/* Background pattern */}
-          <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-white opacity-5 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-[#D4AF37] opacity-10 rounded-full blur-3xl"></div>
           
-          <h3 className="text-2xl font-bold text-cyan-400 mb-8 border-b border-blue-700/50 pb-5 flex items-center gap-4">
-            <span className="text-3xl bg-blue-900/50 p-2 rounded-lg">🏭</span> Facility Capacity & Power
+          <h3 className="text-2xl font-black text-[#D4AF37] mb-8 border-b border-[#D4AF37]/30 pb-5 flex items-center gap-4 uppercase tracking-wide">
+            <span className="text-3xl bg-[#D4AF37]/20 border border-[#D4AF37]/40 p-2 rounded-lg">🏭</span> Facility Capacity & Power
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-blue-50 text-lg font-medium">
-            <div className="bg-white/5 p-6 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors">
-              <span className="block text-cyan-400 text-sm font-semibold mb-2 uppercase tracking-wider">Built-up Area</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-[#F5F5DC] text-lg font-medium">
+            <div className="bg-white/5 p-6 rounded-xl backdrop-blur-sm border border-[#D4AF37]/20 hover:bg-white/10 hover:border-[#D4AF37]/50 transition-all">
+              <span className="block text-[#D4AF37] text-sm font-bold mb-2 uppercase tracking-widest">Built-up Area</span>
               2000 Sq. Ft. Shop Floor
             </div>
-            <div className="bg-white/5 p-6 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors">
-              <span className="block text-cyan-400 text-sm font-semibold mb-2 uppercase tracking-wider">Material Handling</span>
+            <div className="bg-white/5 p-6 rounded-xl backdrop-blur-sm border border-[#D4AF37]/20 hover:bg-white/10 hover:border-[#D4AF37]/50 transition-all">
+              <span className="block text-[#D4AF37] text-sm font-bold mb-2 uppercase tracking-widest">Material Handling</span>
               Overhead Crane (2 Ton - 1 Nos)
             </div>
-            <div className="bg-white/5 p-6 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors">
-              <span className="block text-cyan-400 text-sm font-semibold mb-2 uppercase tracking-wider">Energy Capacity</span>
+            <div className="bg-white/5 p-6 rounded-xl backdrop-blur-sm border border-[#D4AF37]/20 hover:bg-white/10 hover:border-[#D4AF37]/50 transition-all">
+              <span className="block text-[#D4AF37] text-sm font-bold mb-2 uppercase tracking-widest">Energy Capacity</span>
               30 HP Power Available
             </div>
           </div>
@@ -115,37 +115,37 @@ export default function Infrastructure() {
           {/* LATHES & CNC */}
           <motion.div 
             custom={1} variants={cardVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}
-            className="bg-white p-8 md:p-10 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 hover:-translate-y-2 transition-transform duration-300"
+            className="bg-white p-8 md:p-10 rounded-3xl shadow-xl shadow-[#D4AF37]/10 border border-[#D4AF37]/30 hover:-translate-y-2 hover:shadow-2xl hover:border-[#D4AF37] transition-all duration-300"
           >
-            <h3 className="text-2xl font-extrabold text-blue-950 mb-8 flex items-center gap-4">
-              <div className="w-14 h-14 bg-cyan-50 text-cyan-600 rounded-2xl flex items-center justify-center text-2xl shadow-inner border border-cyan-100">⚙️</div>
+            <h3 className="text-2xl font-black text-[#6A0D25] mb-8 flex items-center gap-4 uppercase tracking-wide">
+              <div className="w-14 h-14 bg-[#D4AF37]/10 text-[#6A0D25] rounded-2xl flex items-center justify-center text-2xl shadow-inner border border-[#D4AF37]/30">⚙️</div>
               CNC & Lathe Machining
             </h3>
-            <ul className="space-y-4 text-slate-700 font-medium">
-              <li className="flex gap-4 items-start"><span className="text-cyan-500 font-bold text-xl leading-none">»</span> <span>CNC Turning center (LMW Model LX20 TL5) 200mm x 500mm L</span></li>
-              <li className="flex gap-4 items-start"><span className="text-cyan-500 font-bold text-xl leading-none">»</span> <span>CNC Turning center (ACE Micromatic Model jobber LM)</span></li>
-              <li className="flex gap-4 items-start"><span className="text-cyan-500 font-bold text-xl leading-none">»</span> <span>4.5 ft & 8 ft Allgeard Lathe Machines (Make in England)</span></li>
-              <li className="flex gap-4 items-start"><span className="text-cyan-500 font-bold text-xl leading-none">»</span> <span>7 ft Imported All Geard Lathe Machine (Spindle Bore 52mm)</span></li>
-              <li className="flex gap-4 items-start"><span className="text-cyan-500 font-bold text-xl leading-none">»</span> <span>9 ft & 12 ft IMT Brand Standard Lathe Machines</span></li>
+            <ul className="space-y-4 text-[#14532D]/90 font-medium">
+              <li className="flex gap-4 items-start"><span className="text-[#F97316] font-black text-xl leading-none">»</span> <span>CNC Turning center (LMW Model LX20 TL5) 200mm x 500mm L</span></li>
+              <li className="flex gap-4 items-start"><span className="text-[#F97316] font-black text-xl leading-none">»</span> <span>CNC Turning center (ACE Micromatic Model jobber LM)</span></li>
+              <li className="flex gap-4 items-start"><span className="text-[#F97316] font-black text-xl leading-none">»</span> <span>4.5 ft & 8 ft Allgeard Lathe Machines (Make in England)</span></li>
+              <li className="flex gap-4 items-start"><span className="text-[#F97316] font-black text-xl leading-none">»</span> <span>7 ft Imported All Geard Lathe Machine (Spindle Bore 52mm)</span></li>
+              <li className="flex gap-4 items-start"><span className="text-[#F97316] font-black text-xl leading-none">»</span> <span>9 ft & 12 ft IMT Brand Standard Lathe Machines</span></li>
             </ul>
           </motion.div>
 
           {/* MILLING & OTHERS */}
           <motion.div 
             custom={2} variants={cardVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}
-            className="bg-white p-8 md:p-10 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 hover:-translate-y-2 transition-transform duration-300"
+            className="bg-white p-8 md:p-10 rounded-3xl shadow-xl shadow-[#D4AF37]/10 border border-[#D4AF37]/30 hover:-translate-y-2 hover:shadow-2xl hover:border-[#D4AF37] transition-all duration-300"
           >
-            <h3 className="text-2xl font-extrabold text-blue-950 mb-8 flex items-center gap-4">
-              <div className="w-14 h-14 bg-cyan-50 text-cyan-600 rounded-2xl flex items-center justify-center text-2xl shadow-inner border border-cyan-100">🔧</div>
+            <h3 className="text-2xl font-black text-[#6A0D25] mb-8 flex items-center gap-4 uppercase tracking-wide">
+              <div className="w-14 h-14 bg-[#D4AF37]/10 text-[#6A0D25] rounded-2xl flex items-center justify-center text-2xl shadow-inner border border-[#D4AF37]/30">🔧</div>
               Milling, Press & Fabrication
             </h3>
-            <ul className="space-y-4 text-slate-700 font-medium">
-              <li className="flex gap-4 items-start"><span className="text-cyan-500 font-bold text-xl leading-none">»</span> <span>Milling Machine BFW Brand (X900 x Y350 x Z250)</span></li>
-              <li className="flex gap-4 items-start"><span className="text-cyan-500 font-bold text-xl leading-none">»</span> <span>M1TR Machine with DRO (X1350 x Y375 x Z500)</span></li>
-              <li className="flex gap-4 items-start"><span className="text-cyan-500 font-bold text-xl leading-none">»</span> <span>Hydraulic Press Machine (Capacity - 100 Ton)</span></li>
-              <li className="flex gap-4 items-start"><span className="text-cyan-500 font-bold text-xl leading-none">»</span> <span>Slotting Machine (600mm) & Power Band Saw</span></li>
-              <li className="flex gap-4 items-start"><span className="text-cyan-500 font-bold text-xl leading-none">»</span> <span>ESAB Welding Rectifiers, Arc & CO2 Machines</span></li>
-              <li className="flex gap-4 items-start"><span className="text-cyan-500 font-bold text-xl leading-none">»</span> <span>Bench Drills (Up to 30mm) & Disc Grinders</span></li>
+            <ul className="space-y-4 text-[#14532D]/90 font-medium">
+              <li className="flex gap-4 items-start"><span className="text-[#F97316] font-black text-xl leading-none">»</span> <span>Milling Machine BFW Brand (X900 x Y350 x Z250)</span></li>
+              <li className="flex gap-4 items-start"><span className="text-[#F97316] font-black text-xl leading-none">»</span> <span>M1TR Machine with DRO (X1350 x Y375 x Z500)</span></li>
+              <li className="flex gap-4 items-start"><span className="text-[#F97316] font-black text-xl leading-none">»</span> <span>Hydraulic Press Machine (Capacity - 100 Ton)</span></li>
+              <li className="flex gap-4 items-start"><span className="text-[#F97316] font-black text-xl leading-none">»</span> <span>Slotting Machine (600mm) & Power Band Saw</span></li>
+              <li className="flex gap-4 items-start"><span className="text-[#F97316] font-black text-xl leading-none">»</span> <span>ESAB Welding Rectifiers, Arc & CO2 Machines</span></li>
+              <li className="flex gap-4 items-start"><span className="text-[#F97316] font-black text-xl leading-none">»</span> <span>Bench Drills (Up to 30mm) & Disc Grinders</span></li>
             </ul>
           </motion.div>
         </div>
@@ -159,10 +159,10 @@ export default function Infrastructure() {
           className="mb-20"
         >
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-extrabold text-blue-950 flex items-center justify-center gap-3">
-              <span className="text-4xl">📸</span> Visual Tour of Our Facility
+            <h3 className="text-3xl font-black text-[#6A0D25] flex items-center justify-center gap-3 uppercase tracking-wide">
+              <span className="text-4xl drop-shadow-md">📸</span> Visual Tour of Our Facility
             </h3>
-            <p className="text-slate-500 mt-3 font-medium">A glimpse into our advanced machinery and shop floor</p>
+            <p className="text-[#14532D]/80 mt-3 font-bold uppercase tracking-widest text-sm">A glimpse into our advanced machinery and shop floor</p>
           </div>
           
           {/* Masonry Layout Container */}
@@ -174,7 +174,7 @@ export default function Infrastructure() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, margin: "0px 0px -50px 0px" }}
                 transition={{ duration: 0.5, delay: (index % 5) * 0.1 }}
-                className="break-inside-avoid relative group rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-200 bg-white"
+                className="break-inside-avoid relative group rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border border-[#D4AF37]/30 bg-white"
               >
                 <img
                   src={imagePath}
@@ -183,12 +183,12 @@ export default function Infrastructure() {
                   loading="lazy"
                 />
                 {/* Premium Hover Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#6A0D25]/95 via-[#6A0D25]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                   <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                    <span className="inline-block px-3 py-1 bg-cyan-500 text-white text-xs font-bold rounded-full mb-1">
+                    <span className="inline-block px-3 py-1 bg-[#F97316] text-white text-[10px] uppercase tracking-widest font-bold rounded-full mb-2 shadow-md">
                       Shop Floor
                     </span>
-                    <p className="text-white text-sm font-medium opacity-90 truncate">Equipment View</p>
+                    <p className="text-[#D4AF37] text-sm font-bold truncate">Equipment View</p>
                   </div>
                 </div>
               </motion.div>
@@ -200,35 +200,35 @@ export default function Infrastructure() {
         {/* INSTRUMENTS */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
-          className="bg-slate-900 text-white p-8 md:p-12 rounded-3xl relative overflow-hidden shadow-2xl"
+          className="bg-gradient-to-br from-[#3a0614] to-[#24040d] text-white p-8 md:p-12 rounded-3xl relative overflow-hidden shadow-2xl border border-[#D4AF37]/20"
         >
           {/* Decorative background elements */}
-          <div className="absolute -right-20 -bottom-20 w-80 h-80 border-[50px] border-cyan-500/10 rounded-full"></div>
-          <div className="absolute -left-10 -top-10 w-40 h-40 border-[20px] border-blue-500/10 rounded-full"></div>
+          <div className="absolute -right-20 -bottom-20 w-80 h-80 border-[50px] border-[#D4AF37]/10 rounded-full"></div>
+          <div className="absolute -left-10 -top-10 w-40 h-40 border-[20px] border-[#F97316]/10 rounded-full"></div>
           
           <div className="relative z-10">
-            <h3 className="text-3xl font-extrabold mb-10 text-cyan-400 flex items-center gap-4">
-              <span className="bg-slate-800 p-3 rounded-2xl">📏</span> Quality Control Instruments
+            <h3 className="text-3xl font-black mb-10 text-[#D4AF37] flex items-center gap-4 uppercase tracking-wide">
+              <span className="bg-[#6A0D25] border border-[#D4AF37]/30 p-3 rounded-2xl">📏</span> Quality Control Instruments
             </h3>
-            <div className="grid md:grid-cols-2 gap-8 text-slate-300 text-lg">
+            <div className="grid md:grid-cols-2 gap-8 text-[#F5F5DC]/90 text-lg">
               <ul className="space-y-5">
-                <li className="flex items-center gap-4 bg-slate-800/50 p-3 rounded-xl border border-slate-700/50">
-                  <div className="w-3 h-3 bg-cyan-400 rounded-full shadow-[0_0_10px_rgba(34,211,238,0.6)]"></div> 
-                  <span>Digital & Analogue Verniers (Up to 600mm, LC 0.01/0.02)</span>
+                <li className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#D4AF37]/50 transition-colors">
+                  <div className="w-3 h-3 bg-[#F97316] rounded-full shadow-[0_0_10px_rgba(249,115,22,0.6)] shrink-0"></div> 
+                  <span className="font-medium">Digital & Analogue Verniers (Up to 600mm, LC 0.01/0.02)</span>
                 </li>
-                <li className="flex items-center gap-4 bg-slate-800/50 p-3 rounded-xl border border-slate-700/50">
-                  <div className="w-3 h-3 bg-cyan-400 rounded-full shadow-[0_0_10px_rgba(34,211,238,0.6)]"></div> 
-                  <span>Micrometer Sets (0 to 300 mm, LC - 0.01 mm)</span>
+                <li className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#D4AF37]/50 transition-colors">
+                  <div className="w-3 h-3 bg-[#F97316] rounded-full shadow-[0_0_10px_rgba(249,115,22,0.6)] shrink-0"></div> 
+                  <span className="font-medium">Micrometer Sets (0 to 300 mm, LC - 0.01 mm)</span>
                 </li>
               </ul>
               <ul className="space-y-5">
-                <li className="flex items-center gap-4 bg-slate-800/50 p-3 rounded-xl border border-slate-700/50">
-                  <div className="w-3 h-3 bg-cyan-400 rounded-full shadow-[0_0_10px_rgba(34,211,238,0.6)]"></div> 
-                  <span>Granite Surface Plate (Size: 1000 mm X 1000mm)</span>
+                <li className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#D4AF37]/50 transition-colors">
+                  <div className="w-3 h-3 bg-[#F97316] rounded-full shadow-[0_0_10px_rgba(249,115,22,0.6)] shrink-0"></div> 
+                  <span className="font-medium">Granite Surface Plate (Size: 1000 mm X 1000mm)</span>
                 </li>
-                <li className="flex items-center gap-4 bg-slate-800/50 p-3 rounded-xl border border-slate-700/50">
-                  <div className="w-3 h-3 bg-cyan-400 rounded-full shadow-[0_0_10px_rgba(34,211,238,0.6)]"></div> 
-                  <span>Height Gauges (300mm) & Bore Gauges (0 to 150mm)</span>
+                <li className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#D4AF37]/50 transition-colors">
+                  <div className="w-3 h-3 bg-[#F97316] rounded-full shadow-[0_0_10px_rgba(249,115,22,0.6)] shrink-0"></div> 
+                  <span className="font-medium">Height Gauges (300mm) & Bore Gauges (0 to 150mm)</span>
                 </li>
               </ul>
             </div>
