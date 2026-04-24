@@ -98,18 +98,19 @@ export default function Home() {
       {/* =========================================
           UPDATED MODERN HERO SECTION
           ========================================= */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#24040d] pt-20 px-4">
+      {/* Added pb-32 to ensure content isn't hidden behind the stats card */}
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#24040d] pt-20 pb-32 px-4">
         
         {/* 1. Engineering Grid Background Overlay */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#D4AF3715_1px,transparent_1px),linear-gradient(to_bottom,#D4AF3715_1px,transparent_1px)] bg-[size:3rem_3rem] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_40%,#000_70%,transparent_100%)] pointer-events-none"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#D4AF3715_1px,transparent_1px),linear-gradient(to_bottom,#D4AF3715_1px,transparent_1px)] bg-[size:3rem_3rem] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_40%,#000_70%,transparent_100%)] pointer-events-none z-0"></div>
 
         {/* 2. Modern Glowing Orbs for Depth */}
-        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-[#6A0D25] blur-[140px] pointer-events-none"></div>
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[50%] rounded-full bg-[#F97316]/20 blur-[150px] pointer-events-none"></div>
-        <div className="absolute top-[20%] left-[50%] -translate-x-1/2 w-[50%] h-[40%] rounded-full bg-[#D4AF37]/15 blur-[120px] pointer-events-none"></div>
+        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-[#6A0D25] blur-[140px] pointer-events-none z-0"></div>
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[50%] rounded-full bg-[#F97316]/20 blur-[150px] pointer-events-none z-0"></div>
+        <div className="absolute top-[20%] left-[50%] -translate-x-1/2 w-[50%] h-[40%] rounded-full bg-[#D4AF37]/15 blur-[120px] pointer-events-none z-0"></div>
 
-        {/* 3. Hero Content */}
-        <div className="max-w-5xl mx-auto text-center flex flex-col items-center relative z-10 w-full">
+        {/* 3. Hero Content (Elevated z-index) */}
+        <div className="max-w-5xl mx-auto text-center flex flex-col items-center relative z-20 w-full">
           
           {/* Modern Glassmorphism Badge */}
           <motion.div
@@ -131,7 +132,7 @@ export default function Home() {
             animate="visible"
             custom={1}
             variants={fadeIn}
-            className="text-5xl sm:text-6xl md:text-8xl font-black mb-6 tracking-tight leading-[1.1] text-white"
+            className="text-5xl sm:text-6xl md:text-8xl font-black mb-6 tracking-tight leading-[1.1] text-white drop-shadow-lg"
           >
             Precision <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#F97316] to-[#D4AF37] animate-gradient-x">
@@ -146,7 +147,7 @@ export default function Home() {
             animate="visible"
             custom={2}
             variants={fadeIn}
-            className="text-base sm:text-lg md:text-xl text-[#F5F5DC]/80 max-w-2xl mx-auto mb-10 leading-relaxed font-medium px-4"
+            className="text-base sm:text-lg md:text-xl text-[#F5F5DC]/90 max-w-2xl mx-auto mb-10 leading-relaxed font-medium px-4"
           >
             M/S. Bathe Engineering Works specializes in manufacturing
             high-precision Jigs, Fixtures, Auto turned and CNC components for
@@ -159,35 +160,32 @@ export default function Home() {
             animate="visible"
             custom={3}
             variants={fadeIn}
-            className="flex flex-col sm:flex-row justify-center gap-5 w-full sm:w-auto px-4 sm:px-0"
+            className="flex flex-col sm:flex-row justify-center gap-5 w-full sm:w-auto px-4 sm:px-0 relative z-30"
           >
             {/* Primary Glowing Action Button */}
             <Link href="/infrastructure" className="group relative w-full sm:w-auto">
               <div className="absolute inset-0 bg-[#F97316] rounded-xl blur-md opacity-60 group-hover:opacity-100 transition duration-300"></div>
-              <button className="relative w-full sm:w-auto bg-[#F97316] text-white px-8 py-4 rounded-xl font-black text-sm md:text-base hover:bg-[#EA580C] transition-all transform group-hover:-translate-y-1 uppercase tracking-widest border border-white/10">
+              <button className="relative w-full sm:w-auto bg-[#F97316] text-white px-8 py-4 rounded-xl font-black text-sm md:text-base hover:bg-[#EA580C] transition-all transform group-hover:-translate-y-1 uppercase tracking-widest border border-white/10 shadow-[0_0_25px_rgba(249,115,22,0.4)]">
                 Explore Facility
               </button>
             </Link>
 
             {/* Secondary Glass Outline Button */}
-            <Link href="/contact" className="w-full sm:w-auto">
-              <button className="w-full sm:w-auto bg-white/5 backdrop-blur-md border border-[#D4AF37]/40 text-[#D4AF37] px-8 py-4 rounded-xl font-bold text-sm md:text-base hover:bg-[#D4AF37]/10 hover:border-[#D4AF37] transition-all transform hover:-translate-y-1 uppercase tracking-widest shadow-lg">
+            <Link href="/contact" className="group relative w-full sm:w-auto">
+              <button className="relative w-full sm:w-auto bg-black/40 backdrop-blur-md border-[2px] border-[#D4AF37]/80 text-[#D4AF37] px-8 py-4 rounded-xl font-bold text-sm md:text-base hover:bg-[#D4AF37] hover:text-[#6A0D25] transition-all transform hover:-translate-y-1 uppercase tracking-widest shadow-[0_0_20px_rgba(212,175,55,0.2)]">
                 Request a Quote
               </button>
             </Link>
           </motion.div>
         </div>
-        
-        {/* Subtle Bottom Fade to connect to the next white section */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none z-10"></div>
       </section>
 
       {/* =========================================
-          REST OF THE PAGE (REMAINS CONSISTENT)
+          REST OF THE PAGE 
           ========================================= */}
 
       {/* QUICK STATS */}
-      <section className="bg-white py-10 md:py-12 shadow-lg relative z-20 -mt-8 mx-4 sm:mx-8 md:mx-auto max-w-6xl rounded-2xl border border-[#D4AF37]/20">
+      <section className="bg-white py-10 md:py-12 shadow-lg relative z-40 -mt-16 mx-4 sm:mx-8 md:mx-auto max-w-6xl rounded-2xl border border-[#D4AF37]/20">
         <div className="px-2 md:px-4 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center divide-x divide-slate-100">
           {[
             { label: "Year Established", value: "2005" },

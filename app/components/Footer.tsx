@@ -86,19 +86,20 @@ export default function Footer() {
       >
         
         {/* BRAND & LOGO */}
+{/* BRAND & LOGO */}
         <motion.div variants={itemPopVariants} className="lg:col-span-4 flex flex-col items-start">
           
-          {/* 3D Pop Logo Wrapper */}
+          {/* 3D Pop Logo Wrapper - Changed bg-white to bg-transparent */}
           <motion.div 
             whileHover={{ scale: 1.05, rotateY: 10, rotateX: 5, z: 20 }}
             transition={{ type: "spring", stiffness: 300, damping: 15 }}
-            className="bg-white p-3 rounded-2xl mb-6 shadow-[0_10px_30px_rgba(212,175,55,0.15)] border border-[#D4AF37]/40 relative cursor-pointer group/logo"
+            className="bg-transparent p-3 rounded-2xl mb-6 shadow-[0_10px_30px_rgba(212,175,55,0.15)] border border-[#D4AF37]/40 relative cursor-pointer group/logo"
             style={{ transformStyle: "preserve-3d" }}
           >
             <div className="absolute inset-0 bg-[#D4AF37]/20 rounded-2xl blur-xl group-hover/logo:bg-[#F97316]/30 transition-all duration-500 transform translate-z-[-20px]"></div>
             <div className="relative w-20 h-20 bg-transparent rounded-lg" style={{ transform: "translateZ(10px)" }}>
               <Image 
-                src="/logo_02.jpg" 
+                src="/logo_final_02.png" 
                 alt="Bathe Engineering Works Logo" 
                 fill
                 className="object-contain"

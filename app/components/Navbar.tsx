@@ -96,7 +96,7 @@ export default function Navbar() {
                 {/* REMOVED: bg-white, rounded-full, border, and shadows */}
                 <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 overflow-hidden transition-all duration-300">
                   <Image 
-                    src="/logo_final.png" 
+                    src="/logo_final_02.png" 
                     alt="Bathe Engineering Works" 
                     fill
                     className="object-contain transform group-hover:scale-110 transition-transform duration-500"
